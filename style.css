@@ -111,10 +111,10 @@ main {
     display: block;
 }
 
-.displayHideBtn {
+.displayBtn {
     position: fixed;
     top: 2%;
-    left: 40%;
+    left: 20%;
     width: 20%;
     height: 5%;
     padding: 2%;
@@ -124,18 +124,50 @@ main {
     outline: none;
     border-radius: 20em;
     color: #333;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bold;
     background-color: #4ade90;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
-.displayHideBtn:focus,
-.displayHideBtn:hover {
+.displayBtn:focus,
+.displayBtn:hover {
     box-shadow: 0px 0px 20px 3px #4ade80;
     text-shadow: 0px 0px 20px #000;
     transform: scale(1.1);
+}
+.displayBtn:active {
+    background-color: #646161;
+}
+.hideBtn {
+    position: fixed;
+    top: 2%;
+    right: 20%;
+    width: 20%;
+    height: 5%;
+    padding: 2%;
+    display: grid;
+    place-content: center;
+    border: none;
+    outline: none;
+    border-radius: 20em;
+    color: #333;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #4ade90;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.hideBtn:focus,
+.hideBtn:hover {
+    box-shadow: 0px 0px 20px 3px #4ade80;
+    text-shadow: 0px 0px 20px #000;
+    transform: scale(1.1);
+}
+.hideBtn:active {
+    background-color: #646161;
 }
 
 /* Media queries */

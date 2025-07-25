@@ -1,10 +1,15 @@
 const display = document.getElementById('display');
-const displayHide = document.querySelector('.displayHideBtn');
+const displayBtn = document.querySelector('.displayBtn');
+const hideBtn = document.querySelector('.hideBtn');
 const calculator = document.querySelector('.calculator');
 
-displayHide.addEventListener('click', ()=>{
-  calculator.classList.toggle('hide');
-  calculator.classList.toggle('show');
+displayBtn.addEventListener('click', ()=>{
+  calculator.classList.remove('hide');
+  calculator.classList.add('show');
+})
+hideBtn.addEventListener('click', ()=>{
+  calculator.classList.add('hide');
+  calculator.classList.remove('show');
 })
 
 const operator = (input) =>{
