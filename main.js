@@ -10,6 +10,7 @@ displayBtn.addEventListener('click', ()=>{
 hideBtn.addEventListener('click', ()=>{
   calculator.classList.add('hide');
   calculator.classList.remove('show');
+  operator('c');
 })
 
 const operator = (input) =>{
