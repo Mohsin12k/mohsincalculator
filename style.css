@@ -29,7 +29,7 @@ main {
 
 .calculator {
     width: 100%;
-    height: 115%;
+    height: 420px;
     background-color: rgb(31, 30, 30);
     border-radius: 30px;
     display: flex;
@@ -37,19 +37,22 @@ main {
     align-items: center;
     flex-direction: column;
     padding: 5px;
+    overflow: hidden;
 }
 
 #display {
     width: 100%;
     padding: 8%;
+    padding-left: -30px;
     background-color: #333;
     border: none;
     outline: none;
     overflow: hidden;
     color: whitesmoke;
-    font-size: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-top: -35px;
+    margin-top: -10%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
@@ -64,12 +67,12 @@ main {
 }
 
 .btn {
-    width: 5rem;
-    height: 5rem;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
     display: grid;
     place-content: center;
-    font-size: 3rem;
+    font-size: 1.2em;
     font-weight: bold;
     background-color: hsl(0, 0%, 50%);
     color: whitesmoke;
